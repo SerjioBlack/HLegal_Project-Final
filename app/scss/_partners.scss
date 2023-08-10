@@ -1,0 +1,131 @@
+.partners {
+    margin-bottom: 30px;
+    @media screen and (min-width: $breakpoint-xxl) {
+        margin:0 100px 30px;
+    }
+
+    p {
+        font-size: 14px;
+font-weight: 700;
+letter-spacing: 1px;
+color: $main-color;
+text-transform: uppercase;
+text-align: center;
+margin-bottom: 30px;
+    }
+
+    // .partners__cards
+
+    &__cards {
+        @media screen and (min-width: $breakpoint-md) {
+            display: grid;
+            grid-template-columns: repeat(3, 33.33%);
+        grid-auto-rows: 120px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+        grid-template-columns: repeat(4, 25%);
+    } 
+    @media screen and (min-width: $breakpoint-xl) {
+        border-radius: 12px;
+        overflow: hidden;
+        
+    }
+
+}
+
+    // .partners__cards-item
+
+    &__cards-item {
+        width: 100%;
+        height: 120px;
+        vertical-align: middle;
+        text-align: center;
+        padding: 36px 80px;
+
+        @media screen and (min-width: $breakpoint-md) {
+            padding: auto;
+            display: grid;
+            align-self:center;
+            justify-self: center;
+        }
+        
+
+        &:first-child {
+            background: #1C4280;
+            
+        }
+
+        &:nth-child(2) {
+            background: #143646;
+        }
+
+        &:nth-child(3) {
+            background: linear-gradient(0deg, #F48B30 0%, #F48B30 100%), #F48B30;
+        }
+
+        &:nth-child(4) {
+            background: #9E4DC3;
+        }
+
+        &:nth-child(5) {
+            background: #FD9339;
+        }
+
+        &:nth-child(6) {
+            background: #E2E2E4;
+        }
+
+        &:nth-child(7) {
+            background: #C71C36;
+            
+        }
+
+        &:nth-child(8) {
+            background: #DCF3F9;
+            padding: 22px 55px;
+        }
+
+        &:nth-child(9) {
+            background: #EAEAEA;
+        }
+
+        &:nth-child(10) {
+            background: #282240;
+            padding: 41px 38px;
+        }
+
+        &:nth-child(11) {
+            background: #1D4568;
+        }
+
+        &:nth-child(12) {
+            background: #000;
+            padding: 12px 52px;
+            
+        }
+
+        &:nth-child(7), &:nth-child(8), &:nth-child(9),
+        &:nth-child(10), &:nth-child(11), &:nth-child(12) {
+            display: none;
+            @media screen and (min-width: $breakpoint-md) {
+                display: block;
+            }
+        }
+    }
+
+    // .partners__cards-img
+
+    &__cards-img {
+        align-self: center;
+        justify-items: center;
+        max-width: 100%;
+        height: auto;
+        @media screen and (min-width: $breakpoint-md) {
+            max-width: auto;
+            max-height: 100%;
+        }
+    }
+    }

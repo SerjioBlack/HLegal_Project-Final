@@ -1,0 +1,103 @@
+.team {
+
+    margin-top: 30px;
+    @media screen and (min-width: $breakpoint-md) {
+        margin-bottom: 60px;
+    }
+
+
+    // .team__title
+
+    &__title {
+        @include main-gradient-text($gradient-red-text);
+        font-size: 30px;
+font-weight: 700;
+margin-bottom: 30px;
+@media screen and (min-width: $breakpoint-md) {
+    margin-bottom: 60px;
+    font-size: 38px;
+}
+}
+    
+
+    // .team__list
+
+    &__list {
+        @media screen and (min-width: $breakpoint-md) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+    }
+
+    // .team__card
+
+    &__card {
+        margin-bottom: 30px;
+        @media screen and (min-width: $breakpoint-md) {
+            flex: 1 1 45%;
+        }
+        @media screen and (min-width: $breakpoint-lg) {
+            flex: 1 1 28%;
+        }
+    }
+
+    // .team__photo
+
+    &__photo {
+        margin-bottom: 15px;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+
+    // .team__link
+
+    &__link {
+        display: inline;
+        font-weight: 700;
+        text-decoration: none;
+        color: $main-color;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+&:hover {
+    color: $accent-color;
+}
+    }
+
+    // .team__link-desc
+
+    &__link-desc {
+    }
+
+    // .team__link-arrow
+
+    &__link-arrow {
+       // position: absolute;
+       // top: 50%;
+       // right: 200%;
+       // left: 0;
+
+width: 10px;
+height: 10px;
+border-top: 2px solid $regular-color;
+border-right: 2px solid $regular-color;
+transform: rotate(45deg);
+&:hover {
+    border-top: 2px solid $accent-color;
+border-right: 2px solid $accent-color;
+}
+
+    }
+
+    // .team__card-desc
+
+    &__card-desc {
+        font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+color: $text-color;
+    }
+}
+
